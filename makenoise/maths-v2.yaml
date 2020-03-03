@@ -1,0 +1,71 @@
+manufacturer: Make Noise Co.
+model: MATHS
+version: 2
+inputs:
+  - Channel 1 Signal Input
+  - Channel 1 Trigger Input
+  - Channel 1 Rise CV Input
+  - Channel 1 Both CV Input
+  - Channel 1 Fall CV Input
+  - Channel 1 Cycle Input
+  - Channel 2 Direct Coupled Signal Input
+  - Channel 3 Direct Coupled Signal Input
+  - Channel 4 Signal Input
+  - Channel 4 Trigger Input
+  - Channel 4 Rise CV Input
+  - Channel 4 Both CV Input
+  - Channel 4 Fall CV Input
+  - Channel 4 Cycle Input
+outputs:
+  - Channel 1 End of Rise
+  - Channel 1 Unity Signal
+  - Channel 1 Variable Output
+  - Channel 2 Variable Output
+  - Channel 3 Variable Output
+  - Channel 4 Variable Output
+  - OR Bus Output
+  - SUM Bus Output
+  - Inverted SUM Output
+  - Channel 4 End of Cycle
+  - Channel 4 Unity Signal
+controls:
+  discrete:
+    - name: Channel 1 Cycle
+      states:
+        - on
+        - off
+    - name: Channel 2 Cycle
+      states:
+        - on
+        - off
+  continuous:
+    - name: Channel 1 Rise
+      style: pot
+      polarity: uni
+    - name: Channel 1 Fall
+      style: pot
+      polarity: uni
+    - name: Channel 1 Vari-Response
+      style: pot
+      polarity: uni
+    - name: Channel 4 Rise
+      style: pot
+      polarity: uni
+    - name: Channel 4 Fall
+      style: pot
+      polarity: uni
+    - name: Channel 4 Vari-Response
+      style: pot
+      polarity: uni
+    - name: Channel 1 Attenuverter
+      style: pot
+      polarity: bi
+    - name: Channel 2 Attenuverter
+      style: pot
+      polarity: bi
+    - name: Channel 3 Attenuverter
+      style: pot
+      polarity: bi
+    - name: Channel 4 Attenuverter
+      style: pot
+      polarity: bi
